@@ -17,3 +17,10 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'email' => $faker->email,
     ];
 });
+
+
+$factory->define(\App\Models\Link::class, function (Faker\Generator $faker) {
+    return [
+        'original_url' => $faker->url,
+    ];
+});
